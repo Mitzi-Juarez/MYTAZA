@@ -1,0 +1,306 @@
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    padding: 20px 30px;
+    background-color: #fdeaf3d8;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    z-index: 999;
+    margin-block-end: 5%;  /* Ajusta el margen dee a bajo  */
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.144);
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño de la imagen del logo */
+    /* justify-items: center; */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* *********** AQUI MODIFICo la barra */
+.menu li {
+    display: inline;
+    margin-right: 80px;
+}
+
+.menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+    
+
+}
+
+/* Estilos del menú de hamburguesa */
+.hamburguesa {
+    /display: none; / Oculta el ícono de hamburguesa en pantallas grandes */
+    cursor: pointer;
+}
+
+.linea {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* Estilos de la sección */
+.seccion {
+    display: flex;
+    flex-direction: row-reverse; /* Cambia la dirección de los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 20px;
+   
+}
+
+/* Estilos de la imagen */
+.seccion .seccion1 {
+    flex: 1;
+    text-align: center; /* Alinea la imagen al centro */
+}
+
+.seccion .seccion1 img {
+    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
+    height: auto;
+    margin-block-end: 5%;
+   
+}
+
+/* Estilos de la descripción */
+.seccion .descripcion {
+    flex: 1;
+    padding-left: 20px; /*Espacio entre la imagen y la descripcion                  */    
+    text-align: justify;
+
+}
+/* ****************************** SECCION #2 ********************************++++/
+
+/* Estilos de la imagen SECION #2 */
+.seccion .seccion2 {
+    flex: 1;
+    text-align: center; /* Alinea la imagen al centro */
+
+
+}
+/*  FOTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.seccion .seccion2 img {
+    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
+    height: auto;
+    margin-block-end: 5%;
+   
+
+}
+
+
+/* Estilos de la descripción */
+.seccion .descripcion {
+    flex: 1;
+    padding-left: 1%; /* Espacio entre la imagen y la descripción */
+    padding-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    text-align: justify;    
+
+}
+
+/* *****************************+ SECCION # 3 ********************/
+.seccion .seccion3 {
+    flex: 1;
+    text-align: center; /* Alinea la imagen al centro */
+   
+
+
+}
+/*  FOTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+.seccion .seccion3 img {
+    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
+    height: auto;
+    margin-block-end: 5%;
+   
+
+}
+
+
+/* Estilos de la descripción */
+.seccion .descripcion {
+    flex: 1;
+    padding-left: 20px; /* Espacio entre la imagen y la descripción */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    font-style: normal;
+}
+/*  SEGUNDA PAGINA DE PRODUCTOS */
+/****** ************ SEGUNDA PAGINA DEEE PRODUCTOS******************** */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    max-width: 300px;
+    margin:0;
+    background: #ffffff;
+    padding: 20px;/* MARGEN DEL CUADRO  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align:left;
+    font-size:medium;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.image-container {
+    text-align: left; /* Alinea la imagen a la izquierda */
+    margin-bottom: 3px;/* PIXELES ENTRE LA IMAGEN Y EL TEXTO */
+}
+
+/* modifica el contenido de la imagen la altura y anchura */
+.image-container img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.description {
+    text-align: justify;
+    text-align: center;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.description p {
+    margin-bottom: 3px;
+    margin-block-end: 1%;
+}
+
+
+/*  SECCCION 2 PRODUCTOOOOOOOOOOOOOOOOOOOOOOOOOSSSSSSSS */
+.contenedor-tarjeta{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.tarjeta {
+    max-width: 300px;
+    margin:0;
+    /* background: #ffffff; */
+    padding: 20px;/* MARGEN DEL CUADRO  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:center; /* Alinea la imagen a la izquierda */
+    margin-bottom: 3px;/* PIXELES ENTRE LA IMAGEN Y EL TEXTO */
+    
+}
+.tarjeta img{
+    max-width: 100%; /*  MODIFIC LA IMAGEN  */
+    height: auto;
+}
+
+
+.description {
+    text-align: justify;
+    text-align: center;
+    font-size: larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.description p {
+    margin-bottom: 3px;
+    margin-block-end: 1%;
+}
+
+
+
+/*  CLAS BUTTONSSSSSSSSSSSSSSSSSS */
+
+/* class buttons */
+
+.contenedor-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; /* Añade un poco de espacio superior e inferior */
+}
+
+.buttons {
+    font-size: 500%;
+    display: flex;
+    justify-content: space-around; 
+    max-width: 700%; 
+    width: 100%; 
+}
+
+.buttons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.buttons ul li {
+    margin: 0 15px; /* Espacio entre los íconos */
+    text-align: center;
+}
+
+.buttons a {
+    width: 100px; /* Incrementa el tamaño del ícono */
+    height: 100px; /* Incrementa el tamaño del ícono */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #fdeaf3d8;
+    border-radius: 50%;
+    text-decoration: none; 
+}
+
+.buttons a img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+    /* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+    }
+
+    .hamburguesa {
+        display: block; /* Muestra el ícono de hamburguesa en pantallas pequeñas */
+    }
+}
+
+footer {
+    
+    background-color: #f8a8ef76; 
+    color: #000000;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3px 0; /* Reduce el relleno superior e inferior */
+    font-size: 12px; /* Reduce el tamaño de la fuente */
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
