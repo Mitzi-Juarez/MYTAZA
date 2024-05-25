@@ -1,19 +1,19 @@
 /* Estilos de la barra de navegación */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .navbar {
     display: flex;
-   
     justify-content: space-between;
     align-items: center;
-    position:sticky;
     padding: 20px 30px;
-    background-color: #fdeaf3d8;
-    font-size:x-large;
+    background-color: #f694c2;
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
-    z-index: 999;
-    margin-block-end: 5%;  /* Ajusta el margen dee a bajo  */
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.144);
-    
 }
 body {
     font-family: Arial, sans-serif;
@@ -21,286 +21,149 @@ body {
     padding: 20px;
     background-color: #ffffff;
 }
-
 .logo img {
     width: 150px; /* Ajusta el tamaño de la imagen del logo */
-    /* justify-items: center; */
 }
-
 .menu {
     list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
-/* *********** AQUI MODIFICo la barra */
 .menu li {
-    display: inline;
     margin-right: 80px;
 }
-
 .menu li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-   font-weight: bold;
-    
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
-
-/* Estilos del menú de hamburguesa */
 .hamburguesa {
-    /display: none; / Oculta el ícono de hamburguesa en pantallas grandes */
+    display: none;
+    flex-direction: column;
     cursor: pointer;
 }
-
 .linea {
     width: 25px;
     height: 3px;
-    background-color: white;
-    margin: 5px;
+    background-color: black;
+    margin: 5px 0;
 }
-
-/* Estilos de la sección */
 .seccion {
     display: flex;
-    flex-direction: row-reverse; /* Cambia la dirección de los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    flex-direction: row-reverse;
+    align-items: center;
     margin-bottom: 20px;
-   
 }
-
-/* Estilos de la imagen */
-.seccion .seccion1 {
+.seccion .seccion1, .seccion .seccion2, .seccion .seccion3 {
     flex: 1;
     text-align: center; /* Alinea la imagen al centro */
 }
-
-.seccion .seccion1 img {
-    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
+.seccion img {
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
     height: auto;
-    margin-block-end: 5%;
-   
+    margin-bottom: 5%;
 }
-
-/* Estilos de la descripción */
 .seccion .descripcion {
     flex: 1;
-    padding-left: 20px; /*Espacio entre la imagen y la descripcion                  */    
+    padding: 20px; /* Espacio entre la imagen y la descripción */
     text-align: justify;
-
 }
-/* ****************************** SECCION #2 ********************************++++/
-
-/* Estilos de la imagen SECION #2 */
-.seccion .seccion2 {
-    flex: 1;
-    text-align: center; /* Alinea la imagen al centro */
-
-
-}
-/*  FOTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
-.seccion .seccion2 img {
-    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
-    height: auto;
-    margin-block-end: 5%;
-   
-
-}
-
-
-/* Estilos de la descripción */
-.seccion .descripcion {
-    flex: 1;
-    padding-left: 1%; /* Espacio entre la imagen y la descripción */
-    padding-right: 2%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    font-style: normal;
-    text-align: justify;    
-
-}
-
-/* *****************************+ SECCION # 3 ********************/
-.seccion .seccion3 {
-    flex: 1;
-    text-align: center; /* Alinea la imagen al centro */
-   
-
-
-}
-/*  FOTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
-.seccion .seccion3 img {
-    max-width: 50%; /* La imagen se ajusta al tamaño del contenedor */
-    height: auto;
-    margin-block-end: 5%;
-   
-
-}
-
-
-/* Estilos de la descripción */
-.seccion .descripcion {
-    flex: 1;
-    padding-left: 20px; /* Espacio entre la imagen y la descripción */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    font-style: normal;
-}
-/*  SEGUNDA PAGINA DE PRODUCTOS */
-/****** ************ SEGUNDA PAGINA DEEE PRODUCTOS******************** */
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-.container {
-    max-width: 300px;
-    margin:0;
-    background: #ffffff;
-    padding: 20px;/* MARGEN DEL CUADRO  */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    text-align:left;
-    font-size:medium;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.image-container {
-    text-align: left; /* Alinea la imagen a la izquierda */
-    margin-bottom: 3px;/* PIXELES ENTRE LA IMAGEN Y EL TEXTO */
-}
-
-/* modifica el contenido de la imagen la altura y anchura */
-.image-container img {
-    max-width: 100%; 
-    height: auto;
-}
-
-.description {
-    text-align: justify;
-    text-align: center;
-    font-size: larger;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.description p {
-    margin-bottom: 3px;
-    margin-block-end: 1%;
-}
-
-
-/*  SECCCION 2 PRODUCTOOOOOOOOOOOOOOOOOOOOOOOOOSSSSSSSS */
-.contenedor-tarjeta{
+.contenedor-tarjeta {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 .tarjeta {
     max-width: 300px;
-    margin:0;
-    /* background: #ffffff; */
-    padding: 20px;/* MARGEN DEL CUADRO  */
+    margin: 20px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align:center; /* Alinea la imagen a la izquierda */
-    margin-bottom: 3px;/* PIXELES ENTRE LA IMAGEN Y EL TEXTO */
-    
+    text-align: center;
 }
-.tarjeta img{
-    max-width: 100%; /*  MODIFIC LA IMAGEN  */
+.tarjeta img {
+    max-width: 100%;
     height: auto;
 }
-
-
 .description {
-    text-align: justify;
     text-align: center;
     font-size: larger;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .description p {
     margin-bottom: 3px;
     margin-block-end: 1%;
 }
-
-
-
-/*  CLAS BUTTONSSSSSSSSSSSSSSSSSS */
-
-/* class buttons */
-
 .contenedor-buttons {
     display: flex;
     justify-content: center;
-    padding: 20px 0; /* Añade un poco de espacio superior e inferior */
+    padding: 20px 0;
 }
-
 .buttons {
     font-size: 500%;
     display: flex;
-    justify-content: space-around; 
-    max-width: 700%; 
-    width: 100%; 
+    justify-content: space-around;
+    max-width: 700%;
+    width: 100%;
 }
-
 .buttons ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
+    display: flex;
 }
-
 .buttons ul li {
-    margin: 0 15px; /* Espacio entre los íconos */
+    margin: 0 15px;
     text-align: center;
 }
-
 .buttons a {
-    width: 100px; /* Incrementa el tamaño del ícono */
-    height: 100px; /* Incrementa el tamaño del ícono */
+    width: 100px;
+    height: 100px;
     display: flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    justify-content: center;
     background-color: #fdeaf3d8;
     border-radius: 50%;
-    text-decoration: none; 
+    text-decoration: none;
 }
-
 .buttons a img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
-
-
-    /* Media query para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta el menú en pantallas pequeñas */
-    }
-
-    .hamburguesa {
-        display: block; /* Muestra el ícono de hamburguesa en pantallas pequeñas */
-    }
-}
-
 footer {
-    
-    background-color: #f8a8ef76; 
+    background-color: #f8a8ef76;
     color: #000000;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 3px 0; /* Reduce el relleno superior e inferior */
-    font-size: 12px; /* Reduce el tamaño de la fuente */
+    padding: 3px 0;
+    font-size: 12px;
     position: static;
     bottom: 0;
     width: 100%;
+}
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hamburguesa {
+        display: flex;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .seccion {
+        flex-direction: column;
+    }
+    .seccion .descripcion {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
