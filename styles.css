@@ -61,31 +61,42 @@ body {
 } */
 /* seccion primera pagina 
 /* ********************************************************* */
+
+
 /* TIPOS DE TAZAS  */
+.contenido {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos de las secciones */
 .seccion {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: space-around; /*espacio entre eel texto y la imagen  */
+    margin: 20px 0;
 }
-/* SECCIONES  */
-.seccion .seccion1, .seccion .seccion2, .seccion .seccion3 {
-    flex: 1;
-    text-align: center; /* Alinea la imagen al centro */
-}
-/* imagenes de tazas */
+
 .seccion img {
-    width: 100%;
-    max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
+    width: 400px; /* Aumentar el tamaño de las imágenes */
     height: auto;
-    margin-bottom: 5%;
 }
-/* DESCRIPCION DE LAS TAZAS */
-.seccion .descripcion {
-    flex: 1;
-    padding: 20px; /* Espacio entre la imagen y la descripción */
-    text-align: justify;
+
+.descripcion {
+    padding: 10px;
+    justify-content: center;
+    max-width: 600px; /* Limitar el ancho máximo de la descripción */
 }
+
+ /* ESTILO DEEE LAS IMAGENEES 1 2 3  */ 
+.seccion1 img,.seccion2 img,.seccion3 img {
+    border: 1px solid #ccc;
+    
+    
+}
+
+
+
 /* SECCION DEEE PRODUCTOS */
 /* ************************************************************** */
 
