@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* BARRA DE NAVEGACION */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,15 +16,19 @@
     color: rgb(0, 0, 0);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.144);
 }
+/* CUERPO */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
     background-color: #ffffff;
 }
+
+/* LOGOO */
 .logo img {
     width: 150px; /* Ajusta el tamaño de la imagen del logo */
 }
+/* MENU */
 .menu {
     list-style-type: none;
     display: flex;
@@ -31,52 +36,67 @@ body {
     padding: 0;
 }
 .menu li {
-    margin-right: 80px;
+    margin-right: 80px;   /* margeen */
 }
+
+/* MENU COLOR Y FUENTE */
 .menu li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+/* HAMBURGUESA */
 .hamburguesa {
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
+/* lineas de la hamburguesa */
 .linea {
     width: 25px;
     height: 3px;
     background-color: black;
     margin: 5px 0;
-}
+} */
+/* seccion primera pagina 
+/* ********************************************************* */
+/* TIPOS DE TAZAS  */
 .seccion {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 20px;
 }
+/* SECCIONES  */
 .seccion .seccion1, .seccion .seccion2, .seccion .seccion3 {
     flex: 1;
     text-align: center; /* Alinea la imagen al centro */
 }
+/* imagenes de tazas */
 .seccion img {
     width: 100%;
     max-width: 500px; /* Ajusta el tamaño máximo de las imágenes */
     height: auto;
     margin-bottom: 5%;
 }
+/* DESCRIPCION DE LAS TAZAS */
 .seccion .descripcion {
     flex: 1;
     padding: 20px; /* Espacio entre la imagen y la descripción */
     text-align: justify;
 }
+/* SECCION DEEE PRODUCTOS */
+/* ************************************************************** */
+
+/* CONTENEDOR TARJETA */
 .contenedor-tarjeta {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+/* tartjeta */
 .tarjeta {
     max-width: 300px;
     margin: 20px;
@@ -84,39 +104,53 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* IMAGENES ADENTRO LA TARJETA */
 .tarjeta img {
     max-width: 100%;
     height: auto;
 }
+/* LADESCRIPCION DEL CONTENIDO O TARJETA */
 .description {
     text-align: center;
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/* DEESCRIPCION PARRAFO */
 .description p {
     margin-bottom: 3px;
     margin-block-end: 1%;
+    /* background-color: #f694c2; */
 }
+
+/* CONTENEDOR buttons */
 .contenedor-buttons {
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
+
+/* BUTOOOOONS */
 .buttons {
     font-size: 500%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; /* Alinea los íconos a la izquierda */
     max-width: 700%;
     width: 100%;
 }
+/* ********************************************************************** */
+/* SECCION/  PAGINA DE CONTACTO */
 .buttons ul {
     list-style: none;
     display: flex;
+    /* background-color: #f694c2; */
 }
+
 .buttons ul li {
     margin: 0 15px;
-    text-align: center;
+    text-align: left;
+    
 }
+/* LO DE ATRAS DEL BOTON */
 .buttons a {
     width: 100px;
     height: 100px;
@@ -127,10 +161,14 @@ body {
     border-radius: 50%;
     text-decoration: none;
 }
+/* IMAGNE BUTTONS */
 .buttons a img {
     max-width: 100%;
     height: auto;
 }
+
+/* FOOTER */
+
 footer {
     background-color: #f8a8ef76;
     color: #000000;
